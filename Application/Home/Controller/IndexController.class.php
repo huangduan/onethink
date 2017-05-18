@@ -18,7 +18,6 @@ class IndexController extends HomeController {
 
 	//系统首页
     public function index(){
-
         $category = D('Category')->getTree();
         $lists    = D('Document')->lists(null);
 
@@ -28,6 +27,9 @@ class IndexController extends HomeController {
 
                  
         $this->display();
+    }
+    public function test(){
+        echo 1;
     }
 
 }
