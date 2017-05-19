@@ -32,4 +32,12 @@ class IndexController extends HomeController {
         echo 1;
     }
 
+    /**
+     * @return array
+     */
+    public function add()
+    {
+        
+    }
+
 }
