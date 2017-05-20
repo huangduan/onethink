@@ -38,6 +38,10 @@ class IndexController extends HomeController {
     public function add()
     {
         
+
+    }
+    public function test2(){
+            echo 0;
     }
 
 }
