@@ -1,0 +1,283 @@
+[ 2017-05-21T22:09:54+08:00 ] 127.0.0.1 /index.php?s=/admin/index/index.html/2
+ERR: 非法操作:index.html
+
+[ 2017-05-21T22:14:04+08:00 ] 127.0.0.1 /index.php?s=/admin/index/index.html
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.006269s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000549s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Index/index%' ) LIMIT 1   [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.006722s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000353s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 1 )  [ RunTime:0.000421s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 1 ) AND ( `hide` = 0 )  [ RunTime:0.000299s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000745s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000814s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `onethink_addons` [ RunTime:0.006432s ]
+SQL: SELECT `config` FROM `onethink_addons` WHERE ( `name` = 'SiteStat' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.006282s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_member` LIMIT 1   [ RunTime:0.000280s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.006333s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` LIMIT 1   [ RunTime:0.000237s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.006190s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_document` LIMIT 1   [ RunTime:0.000249s ]
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.007265s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_category` LIMIT 1   [ RunTime:0.000234s ]
+SQL: SHOW COLUMNS FROM `onethink_model` [ RunTime:0.008193s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_model` LIMIT 1   [ RunTime:0.000218s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.090077s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.043227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043277s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: Run SiteStat [ RunTime:0.089516s ]
+SQL: SELECT `config` FROM `onethink_addons` WHERE ( `name` = 'SystemInfo' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000512s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.240143s ]
+SQL: select version() as v; [ RunTime:0.000280s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.064934s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.085169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.149760s ]
+INFO: Run SystemInfo [ RunTime:0.149771s ]
+SQL: SELECT `config` FROM `onethink_addons` WHERE ( `name` = 'DevTeam' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000443s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.252307s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011327s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.151662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000017s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.162734s ]
+INFO: Run DevTeam [ RunTime:0.013014s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.252378s ]
+INFO: [ AdminIndex ] --START--
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_member` LIMIT 1   [ RunTime:0.000390s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` LIMIT 1   [ RunTime:0.000291s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_document` LIMIT 1   [ RunTime:0.000262s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_category` LIMIT 1   [ RunTime:0.000179s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_model` LIMIT 1   [ RunTime:0.000163s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.258078s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002060s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.165514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.167245s ]
+INFO: Run SiteStat [ RunTime:0.004394s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.345102s ]
+SQL: select version() as v; [ RunTime:0.000289s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002493s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.252528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.254675s ]
+INFO: Run SystemInfo [ RunTime:0.087413s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.347712s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.027791s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.255284s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.282743s ]
+INFO: Run DevTeam [ RunTime:0.028057s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:-0.000026s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.027955s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.255284s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.282910s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000743s ]
+
+[ 2017-05-21T22:15:10+08:00 ] 127.0.0.1 /index.php?s=/admin/index/index.html
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.006817s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000725s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Index/index%' ) LIMIT 1   [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.007156s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000344s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 1 )  [ RunTime:0.000404s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 1 ) AND ( `hide` = 0 )  [ RunTime:0.000256s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000761s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000842s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `onethink_addons` [ RunTime:0.008216s ]
+SQL: SELECT `config` FROM `onethink_addons` WHERE ( `name` = 'SiteStat' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.008097s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_member` LIMIT 1   [ RunTime:0.000281s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.008318s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` LIMIT 1   [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.006272s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_document` LIMIT 1   [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.006932s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_category` LIMIT 1   [ RunTime:0.000248s ]
+SQL: SHOW COLUMNS FROM `onethink_model` [ RunTime:0.006884s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_model` LIMIT 1   [ RunTime:0.000250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.054270s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.003037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003112s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000402s ]
+INFO: Run SiteStat [ RunTime:0.053804s ]
+SQL: SELECT `config` FROM `onethink_addons` WHERE ( `name` = 'SystemInfo' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000494s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.161201s ]
+SQL: select version() as v; [ RunTime:0.000343s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002837s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.104260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.106737s ]
+INFO: Run SystemInfo [ RunTime:0.106755s ]
+SQL: SELECT `config` FROM `onethink_addons` WHERE ( `name` = 'DevTeam' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000542s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.165984s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002539s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.108776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.110971s ]
+INFO: Run DevTeam [ RunTime:0.004227s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.164865s ]
+INFO: [ AdminIndex ] --START--
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_member` LIMIT 1   [ RunTime:0.000345s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` LIMIT 1   [ RunTime:0.000294s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_document` LIMIT 1   [ RunTime:0.000254s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_category` LIMIT 1   [ RunTime:0.000246s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_model` LIMIT 1   [ RunTime:0.000159s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.171070s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002819s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.113764s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.116256s ]
+INFO: Run SiteStat [ RunTime:0.005252s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.256560s ]
+SQL: select version() as v; [ RunTime:0.000252s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002428s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.199763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.201845s ]
+INFO: Run SystemInfo [ RunTime:0.085570s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.259144s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001858s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.202498s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.203996s ]
+INFO: Run DevTeam [ RunTime:0.002126s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:-0.000016s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002022s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.202498s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000006s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.204157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
+
+[ 2017-05-21T22:16:24+08:00 ] 127.0.0.1 /index.php?s=/admin/index/index.html
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.009725s ]
+SQL: SELECT * FROM `onethink_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000479s ]
+SQL: SELECT `id` FROM `onethink_menu` WHERE ( url like '%Index/index%' ) LIMIT 1   [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.006583s ]
+SQL: SELECT `id`,`pid`,`title` FROM `onethink_menu` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000343s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE ( pid = 1 )  [ RunTime:0.000387s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE ( `pid` = 1 ) AND ( `hide` = 0 )  [ RunTime:0.000306s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001376s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001470s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `onethink_addons` [ RunTime:0.005993s ]
+SQL: SELECT `config` FROM `onethink_addons` WHERE ( `name` = 'SiteStat' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.006382s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_member` LIMIT 1   [ RunTime:0.000268s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.006527s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` LIMIT 1   [ RunTime:0.000259s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.006609s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_document` LIMIT 1   [ RunTime:0.000259s ]
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.006763s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_category` LIMIT 1   [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `onethink_model` [ RunTime:0.016312s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_model` LIMIT 1   [ RunTime:0.000280s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.057202s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000491s ]
+INFO: Run SiteStat [ RunTime:0.057365s ]
+SQL: SELECT `config` FROM `onethink_addons` WHERE ( `name` = 'SystemInfo' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000459s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.157568s ]
+SQL: select version() as v; [ RunTime:0.000301s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002770s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.097391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.099723s ]
+INFO: Run SystemInfo [ RunTime:0.099727s ]
+SQL: SELECT `config` FROM `onethink_addons` WHERE ( `name` = 'DevTeam' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000355s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.161360s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.001886s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.101482s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.102914s ]
+INFO: Run DevTeam [ RunTime:0.003184s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.160346s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002042s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.101482s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.103085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000716s ]
+
