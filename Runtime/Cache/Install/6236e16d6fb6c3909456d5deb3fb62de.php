@@ -53,7 +53,7 @@
     <?php
  defined('SAE_MYSQL_HOST_M') or define('SAE_MYSQL_HOST_M', '127.0.0.1'); defined('SAE_MYSQL_HOST_M') or define('SAE_MYSQL_PORT', '3306'); ?>
     <h1>创建数据库</h1>
-    <form action="/install.php?s=/Install/step2.html" method="post" target="_self">
+    <form action="/index.php?s=/Install/Install/step2.html" method="post" target="_self">
         <div class="create-database">
             <h2>数据库连接信息</h2>
             <div>
